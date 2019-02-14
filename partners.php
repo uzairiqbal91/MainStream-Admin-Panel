@@ -22,37 +22,70 @@
 					<!-- OVERVIEW -->
 					<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Striped Row</h3>
+									<h1 class="panel-title tabheadingdesign">All Publishers</h1>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
+								<div class="panel-body panelshadow">
+									<table class="table tabelshadow table-striped">
 										<thead>
 											<tr>
 												<th>#</th>
+												<th>Image</th>
 												<th>First Name</th>
 												<th>Last Name</th>
-												<th>Username</th>
+												<th>Email</th>
+												<th>Details</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>1</td>
-												<td>Steve</td>
-												<td>Jobs</td>
-												<td>@steve</td>
+												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
+												<td class="tablecontent">Steve</td>
+												<td class="tablecontent">Jobs</td>
+												<td class="tablecontent">@steve</td>
+												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
 											</tr>
 											<tr>
 												<td>2</td>
-												<td>Simon</td>
-												<td>Philips</td>
-												<td>@simon</td>
+												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
+												<td class="tablecontent">Steve</td>
+												<td class="tablecontent">Jobs</td>
+												<td class="tablecontent">@steve</td>
+												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
 											</tr>
 											<tr>
 												<td>3</td>
-												<td>Jane</td>
-												<td>Doe</td>
-												<td>@jane</td>
+												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
+												<td class="tablecontent">Steve</td>
+												<td class="tablecontent">Jobs</td>
+												<td class="tablecontent">@steve</td>
+												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
 											</tr>
+
+											<tr>
+												<td>4</td>
+												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
+												<td class="tablecontent">Steve</td>
+												<td class="tablecontent">Jobs</td>
+												<td class="tablecontent">@steve</td>
+												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
+											</tr>
+
+												<tr>
+												<td>5</td>
+												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
+												<td class="tablecontent">Steve</td>
+												<td class="tablecontent">Jobs</td>
+												<td class="tablecontent">@steve</td>
+												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
+											</tr>
+
+										
+
+
+
+
+
 										</tbody>
 									</table>
 								</div>
@@ -201,6 +234,9 @@
 		}
 
 	});
+		$(document).ready(function() {
+    $("#6").addClass("active");
+    });
 	</script>
 </body>
 

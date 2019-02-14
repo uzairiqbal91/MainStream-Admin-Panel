@@ -22,37 +22,47 @@
 					<!-- OVERVIEW -->
 					<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Striped Row</h3>
+									<h1 class="panel-title tabheadingdesign">All Payments</h1>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
+								<div class="panel-body panelshadow">
+									<table class="table tabelshadow table-striped">
 										<thead>
 											<tr>
 												<th>#</th>
-												<th>First Name</th>
-												<th>Last Name</th>
-												<th>Username</th>
+												<th>Payment Id</th>
+												<th>Amount</th>
+												<th>Status</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
 												<td>1</td>
-												<td>Steve</td>
-												<td>Jobs</td>
-												<td>@steve</td>
+												
+												<td class="tablecontent">1001</td>
+												
+												<td class="tablecontent">$10</td>
+
+												<td class="tablecontent">Completed</td>
+												</td>
 											</tr>
 											<tr>
-												<td>2</td>
-												<td>Simon</td>
-												<td>Philips</td>
-												<td>@simon</td>
+												<td>1</td>
+												
+												<td class="tablecontent">1001</td>
+												
+												<td class="tablecontent">$20</td>
+
+												<td class="tablecontent">Pending</td>
+												</td>
 											</tr>
-											<tr>
-												<td>3</td>
-												<td>Jane</td>
-												<td>Doe</td>
-												<td>@jane</td>
-											</tr>
+											
+
+										
+
+
+
+
+
 										</tbody>
 									</table>
 								</div>
@@ -201,6 +211,12 @@
 		}
 
 	});
+
+	$(document).ready(function() {
+    $("#7").addClass("active");
+   
+
+});
 	</script>
 </body>
 

@@ -22,37 +22,44 @@
 					<!-- OVERVIEW -->
 					<div class="panel">
 								<div class="panel-heading">
-									<h3 class="panel-title">Striped Row</h3>
+									<h1 class="panel-title tabheadingdesign">Music Detail</h1>
 								</div>
-								<div class="panel-body">
-									<table class="table table-striped">
+								<div class="panel-body ">
+									<h3 class=" tabheadingdesignchild">Music Name</h1>
+									<h3 class=" tabheadingdesignchild">Publisher Name</h1>
+									<audio controls>
+
+  <source src="http://transom.org/wp-content/uploads/2004/03/stereo_96kbps.mp3?_=6">
+Your browser does not support the audio element.
+</audio>
+								</div>
+
+								<div class="panel-body panelshadow">
+									<table class="table tabelshadow table-striped">
 										<thead>
 											<tr>
-												<th>#</th>
-												<th>First Name</th>
-												<th>Last Name</th>
-												<th>Username</th>
+												
+												<th>Purchased</th>
+												<th>Playlist</th>
+												<th>Faviroutes</th>
+												<th>Likes</th>
+
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>1</td>
-												<td>Steve</td>
-												<td>Jobs</td>
-												<td>@steve</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Simon</td>
-												<td>Philips</td>
-												<td>@simon</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Jane</td>
-												<td>Doe</td>
-												<td>@jane</td>
-											</tr>
+												<td>4</td>
+												<td>9</td>
+												<td>15</td>
+												<td>51</td>
+										
+
+										
+
+
+
+
+
 										</tbody>
 									</table>
 								</div>
@@ -201,6 +208,16 @@
 		}
 
 	});
+
+
+function openWin() {
+  window.open("https://www.w3schools.com");
+}
+	$(document).ready(function() {
+    $("#2").addClass("active");
+   
+
+});
 	</script>
 </body>
 

@@ -1,12 +1,97 @@
 .imgcustom{
 
-	height: 30px;
-    width: 30px;
+	height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #00aaff;
 }
 
 
+.toplogostyle
+{
+    padding: 5px 100px 0px 50px  !important;	
+}
+
+
+
+
+.img-responsive-logo
+{
+height: 70px !important;
+}
 .imgpadding{
 
-	text-align: center !important;
+	text-align: center !important; /* importnat is for solving ambiguity*/
 	padding-top: 10px !important;
 }
+
+
+.panelshadow
+{
+    box-shadow: 0 7px 10px rgb(189, 189, 202); !important  ;
+}
+
+
+
+
+.tabelshadow
+{
+    box-shadow: 0 7px 10px rgb(189, 189, 202); !important  ;
+}
+
+
+.metric
+{
+      border: 1px solid #0081c2;
+}
+
+
+.metric .number{
+    color: #0081c2;
+
+
+}
+
+.tableimage
+{
+	webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #00aaff;
+    text-align: center;
+}
+
+.tablecontent
+{
+
+    vertical-align: middle !important;
+
+}
+.tabheadingdesign{
+	    margin: 0 !important;
+    font-size: 38px !important;
+    font-weight: 350 !important;
+    color: inherit !important;
+} 
+
+.tabheadingdesignchild{
+	    margin: 0 !important;
+    font-size: 30px !important;
+    font-weight: 200 !important;
+    color: inherit !important;
+} 
+
+
+webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0081c2;
+    text-align: center;
