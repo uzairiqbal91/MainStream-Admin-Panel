@@ -1,7 +1,20 @@
+
+
+
 <!doctype html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:400'>
+        <link rel='stylesheet prefetch' href='css/waves.min.css'>
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
 
 <?php include 'header.php'  ?>
+
 
 <body>
 	<!-- WRAPPER -->
@@ -22,73 +35,37 @@
 					<!-- OVERVIEW -->
 					<div class="panel">
 								<div class="panel-heading">
-									<h1 class="panel-title tabheadingdesign">All Artists</h1>
+									<h1 class="panel-title tabheadingdesign">Genres Detail</h1>
 								</div>
+								<div class="panel-body ">
+
+									
+									
+									<h3 class=" tabheadingdesignchild">Classis</h1> 
+
+	
+	  
+
+
 								<div class="panel-body panelshadow">
 									<table class="table tabelshadow table-striped">
 										<thead>
 											<tr>
-												<th>#</th>
-												<th>Image</th>
-												<th>First Name</th>
-												<th>Last Name</th>
-												<th>Email</th>
-												<th>Details</th>
+												
+												<th>Purchased</th>
+												<th>Playlist</th>
+												<th>Faviroutes</th>
+												<th>Likes</th>
+
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>1</td>
-												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
-												<td class="tablecontent">Steve</td>
-												<td class="tablecontent">Jobs</td>
-												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary"
-													onclick="window.location.href='artist-profile.php'"
-													>Details</button></td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
-												<td class="tablecontent">Steve</td>
-												<td class="tablecontent">Jobs</td>
-												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary"
-													onclick="window.location.href='artist-profile.php'"
-													>Details</button></td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
-												<td class="tablecontent">Steve</td>
-												<td class="tablecontent">Jobs</td>
-												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary"
-													onclick="window.location.href='artist-profile.php'"
-													>Details</button></td>
-											</tr>
-
-											<tr>
 												<td>4</td>
-												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
-												<td class="tablecontent">Steve</td>
-												<td class="tablecontent">Jobs</td>
-												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary"
-													onclick="window.location.href='artist-profile.php'"
-													>Details</button></td>
-											</tr>
-
-												<tr>
-												<td>5</td>
-												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
-												<td class="tablecontent">Steve</td>
-												<td class="tablecontent">Jobs</td>
-												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary"
-													onclick="window.location.href='artist-profile.php'"
-													>Details</button></td>
-											</tr>
+												<td>9</td>
+												<td>15</td>
+												<td>51</td>
+										
 
 										
 
@@ -244,9 +221,18 @@
 		}
 
 	});
-		$(document).ready(function() {
-    $("#3").addClass("active");
-    });
+
+
+
+function openWin() {
+  window.open("https://www.w3schools.com");
+}
+	$(document).ready(function() {
+    $("#4").addClass("active");
+   
+
+});
 	</script>
 </body>
 
+</html>

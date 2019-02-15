@@ -43,7 +43,7 @@
 												<td class="tablecontent">Steve</td>
 												<td class="tablecontent">Jobs</td>
 												<td class="tablecontent">@steve</td>
-												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
+												<td class="tablecontent"><button type="button" onclick="window.location.href='publisherprofile.php'" class="btn btn-primary">Details</button></td>
 											</tr>
 											<tr>
 												<td>2</td>

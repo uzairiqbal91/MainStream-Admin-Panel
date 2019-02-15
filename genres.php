@@ -31,6 +31,7 @@
 												<th>#</th>
 												<th>Genres Name</th>
 												<th>Music Count</th>
+												<th>Detail</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -40,6 +41,11 @@
 												<td class="tablecontent">Classic</td>
 												
 												<td class="tablecontent">4</td>
+													<td class="tablecontent">
+														<button type="button" class="btn btn-primary"
+													onclick="window.location.href='genres-profile.php'"
+													>Details</button>
+												</td>
 												</td>
 											</tr>
 											<tr>
@@ -48,6 +54,9 @@
 												<td class="tablecontent">Classic</td>
 												
 												<td class="tablecontent">4</td>
+													<td class="tablecontent"><button type="button" class="btn btn-primary"
+													onclick="window.location.href='genres-profile.php'"
+													>Details</button></td>
 												</td>
 											</tr>
 											

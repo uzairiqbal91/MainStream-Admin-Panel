@@ -1,3 +1,31 @@
+
+<?php include 'seviceLink.php'  ?>
+<?php
+   
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+     //	CURLOPT_URL => "https://purpledimes.com/Diftech/webservices/get_all_employee.php?",
+      CURLOPT_URL => $service."get_all_employee.php",
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_TIMEOUT => 30,
+      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+      CURLOPT_CUSTOMREQUEST => "GET",
+      CURLOPT_HTTPHEADER => array(
+      "cache-control: no-cache"
+      ),
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    curl_close($curl);
+
+    $response = json_decode($response, true);
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -36,7 +64,47 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
+
+											
+											<?php 
+											//Refresh it everytime.
+					 						//because of true, it's in an array
+
+												$Rows = count($response); 
+												//Dynamic number for Rowss
+												// $Cols = 4; // Dynamic number for Colsumns
+												
+												for($i=0;$i<$Rows;$i++){
+													
+													echo '<tr>';
+														echo '<td>' . $response[$i]['id'] . '</td>'; 
+														echo '<td><span class="icon "><img class="imgcustom" src="' . $response[$i]['emp_image'] . '"></span></td>'; 
+
+														echo '<td class="tablecontent"> ' . $response[$i]['emp_name'] . '</td>'; 
+														echo '<td class="tablecontent"> ' . $response[$i]['emp_email'] . '</td>';
+
+														echo '
+															<td class="tablecontent"><a href="musicdetail.php?id='.$response[$i]['id'].'"><button type="button"  class="btn btn-primary">
+															Details</button></a></td>
+														';
+
+
+
+													
+
+													echo '</tr>';
+													  
+													
+												
+													}
+						  
+						
+						
+												?>
+												
+
+
+											<!-- <tr>
 												<td>1</td>
 												<td><span class="icon "><img class="imgcustom" src="https://images.pexels.com/photos/555790/pexels-photo-555790.png?cs=srgb&dl=black-and-white-boy-casual-555790.jpg&fm=jpg"></span></td>
 												<td class="tablecontent">Steve</td>
@@ -77,7 +145,7 @@
 												<td class="tablecontent">Jobs</td>
 												
 												<td class="tablecontent"><button type="button" class="btn btn-primary">Details</button></td>
-											</tr>
+											</tr> -->
 
 										
 

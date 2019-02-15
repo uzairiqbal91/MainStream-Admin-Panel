@@ -52,6 +52,15 @@ height: 70px !important;
 
 }
 
+.profile-number{
+
+	color: #0081c2;
+    display: block;
+    font-size: 38px;
+    font-weight: 300;
+    
+}
+
 .tableimage
 {
 	webkit-border-radius: 50%;
@@ -63,6 +72,22 @@ height: 70px !important;
     line-height: 50px;
     border: 1px solid #00aaff;
     text-align: center;
+}
+
+.profile-statbg
+
+{
+
+    background-color: #0081c2 !important;
+
+
+}
+
+.profile-header .profile-stat .stat-item:after
+{
+
+    background-color: #ffffff !important;
+
 }
 
 .tablecontent
@@ -84,6 +109,12 @@ height: 70px !important;
     font-weight: 200 !important;
     color: inherit !important;
 } 
+.player
+{
+	  padding-top: 10px;
+    padding-bottom: 15px;
+}
+
 
 
 webkit-border-radius: 50%;
@@ -95,3 +126,8 @@ webkit-border-radius: 50%;
     line-height: 50px;
     background-color: #0081c2;
     text-align: center;
+
+
+
+
+

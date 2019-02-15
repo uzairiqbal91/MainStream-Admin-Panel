@@ -1,7 +1,45 @@
+<?php include 'seviceLink.php'  ?>
+<?php
+   
+    $curl = curl_init();
+
+    curl_setopt_array($curl, array(
+     	CURLOPT_URL => "https://purpledimes.com/Diftech/webservices/get_all_task_procedures.php?task_id=".$_REQUEST['id'],
+
+     // CURLOPT_URL => $service."get_all_task_procedures.php?task_id=".$REQUEST['id'],
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_TIMEOUT => 30,
+      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+      CURLOPT_CUSTOMREQUEST => "GET",
+      CURLOPT_HTTPHEADER => array(
+      "cache-control: no-cache"
+      ),
+    ));
+
+    $response = curl_exec($curl);
+    $err = curl_error($curl);
+
+    curl_close($curl);
+
+    $response = json_decode($response, true);
+
+?>
+
+
 <!doctype html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Lato:400'>
+        <link rel='stylesheet prefetch' href='css/waves.min.css'>
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
 
 <?php include 'header.php'  ?>
+
 
 <body>
 	<!-- WRAPPER -->
@@ -24,15 +62,61 @@
 								<div class="panel-heading">
 									<h1 class="panel-title tabheadingdesign">Music Detail</h1>
 								</div>
-								<div class="panel-body ">
-									<h3 class=" tabheadingdesignchild">Music Name</h1>
-									<h3 class=" tabheadingdesignchild">Publisher Name</h1>
-									<audio controls>
+								<!-- <div class="panel-body ">
 
-  <source src="http://transom.org/wp-content/uploads/2004/03/stereo_96kbps.mp3?_=6">
-Your browser does not support the audio element.
-</audio>
-								</div>
+									
+									<h3 class=" tabheadingdesignchild"><?php 
+												
+													echo  $response[1]['procedures_name'] ; 
+						  
+						
+						
+												?></h1>
+									<h3 class=" tabheadingdesignchild">Publisher Name</h1> -->
+
+	
+	  <div class="player">
+		
+		<div class="mask"></div>
+		<ul class="player-info info-one">
+		  <li>Memories (royalty free)</li>
+		  <li>Bensound.com</li>
+		  <li>3.50</li>
+		</ul>
+		<ul class="player-info info-two">
+		  <li>Memories (royalty free)</li>
+		  <li>Bensound.com</li>
+		  <li><span id="duration"></span><i> / </i>3.50</li>
+		</ul>
+		<div id="play-button" class="unchecked">
+		  <i class="icon icon-play"></i>
+		</div>
+		<div class="control-row">
+		  <div class="waves-animation-one"></div>
+		  <div class="waves-animation-two"></div>
+		  <div id="pause-button">
+			<i class="icon"></i>
+		  </div>
+		  <div class="seek-field">
+			<input id="audioSeekBar" min="0" max="334" step="1" value="0" type="range" oninput="audioSeekBar()" onchange="this.oninput()">
+		  </div>
+		  <div class="volume-icon">
+			<i class="icon-volume-up"></i>
+		  </div>
+		  <div class="volume-field">
+			<input type="range" min="0" max="100" value="100" step="1" oninput="audio.volume = this.value/100" onchange="this.oninput()">
+		  </div>
+		</div>
+	  </div>
+
+	<audio id="audio-player" ontimeupdate="SeekBar()" ondurationchange="CreateSeekBar()" preload="auto" loop>
+	  <source src="audio/bensound-memories.ogg" type="audio/ogg">
+	  <source src="audio/bensound-memories.mp3" type="audio/mpeg">
+	</audio>
+		<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+		<script src='js/waves.min.js'></script>
+		<script src="js/index.js"></script>    
+
 
 								<div class="panel-body panelshadow">
 									<table class="table tabelshadow table-striped">
@@ -208,6 +292,7 @@ Your browser does not support the audio element.
 		}
 
 	});
+
 
 
 function openWin() {
